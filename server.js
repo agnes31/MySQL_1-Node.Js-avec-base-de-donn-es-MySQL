@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
     res.json({message: 'Welcome'})
 })
 
+const db = require('./app/models')
+db.connex.sync()
+
+
 const PORT =  8080
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`)
