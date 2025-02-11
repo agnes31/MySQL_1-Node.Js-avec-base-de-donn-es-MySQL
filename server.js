@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended:true }))
 app.get('/', (req, res) => {
     res.json({message: 'Welcome'})
 })
+require('./app/routes/product.route')(app)
 
 const db = require('./app/models')
 db.connex.sync()
