@@ -1,4 +1,4 @@
-const db = require('../../../project-vue/server/app/models')
+const db = require('../models')
 const Product = db.products
 
 exports.findAll = (req, res) => {

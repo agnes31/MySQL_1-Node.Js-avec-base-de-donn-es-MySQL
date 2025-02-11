@@ -1,5 +1,5 @@
 module.exports = app => {
-        const product = require('../../../../.Trash/server/controllers/product.controller.js')
+        const product = require('../controllers/product.controller.js')
         const router = require('express').Router()
         router.get('/', product.findAll)
         router.post('/', product.create)
